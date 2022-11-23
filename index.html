@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>[简历]梁思琦&丢丢的ID CARD</title>
+    <link rel="shortcut icon" href="assets/images/R-C.icon.bmp" type="images/R-C.icon.bmp">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script>
+        function load_avatar() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('load_avatar')[0].style.display = 'none';
+        }
+	</script>
+	<style>
+	h3:hover{color: yellow;}
+
+	</style>
+</head>
+
+<body>
+	
+
+    <header class="header"></header>
+
+    <article class="container">
+        <section class="side" id="side">
+
+            <!-- 左栏固定开关，记得及时删除这段代码 Start-->
+            <label class="switch" style="display: none;" onchange="switchFixed()">
+                <script type="text/javaScript">
+                    function switchFixed(){
+                        var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
+                        document.getElementById('side').style.position = value;
+                    }
+                </script>
+                <input id="cb" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <style>
+                @media (min-width: 	750px){
+                    .switch{position:relative;display:inline-block!important;width:60px;height:34px;}
+                    .switch input{display:none;}
+                    .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;-webkit-transition:.4s;transition:.4s;}
+                    .slider:before{position:absolute;content:"";height:26px;width:26px;left:4px;bottom:4px;background-color:white;-webkit-transition:.4s;transition:.4s;}
+                    input:checked + .slider{background-color:#1abc9c;}
+                    input:focus + .slider{box-shadow:0 0 1px #1abc9c;}
+                    input:checked + .slider:before{-webkit-transform:translateX(26px);-ms-transform:translateX(26px);transform:translateX(26px);}.slider.round{border-radius:34px;}
+                    .slider.round:before{border-radius:50%;}
+                }
+            </style>
+            <!-- 左侧固定开关，记得及时删除这段代码 End-->
+
+            <!-- 个人肖像 -->
+            <section class="me">
+                <section class="portrait">
+                    <div class="load">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- 头像照片 -->
+                    <img class="avatar" src="assets/images/touxiang.jpg" onload="load_avatar()">
+                </section>
+
+                <h1 class="name"style="font-size: 20px;" ><b>梁思琦</b></h1>
+                <h4 class="info-job"><b>网络与新媒体1班/学生</b></h4>
+				<details>
+					<summary>点击查看更多关于我的内容</summary>
+					<p>哈哈其实什么都没有，我用来加分滴</p>
+				</details>
+
+            </section>
+
+            <!-- 基本信息 -->
+            <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-life-ring" aria-hidden="true"></i>基本信息</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>个人信息</label>
+                        <span>梁思琦/女/18岁</span>
+                    </li>
+                    <li>
+                        <label>英语水平</label>
+                        <span>还没考嘻嘻</span>
+                    </li>
+                    <li>
+                        <label>计算机水平</label>
+                        <span>也没考</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 联系方式 -->
+            <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-meh-o" aria-hidden="true"></i>联系方式</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>手机</label>
+                        <a href="tel:18029340908" target="_blank">131-7234-6091</a>
+                    </li>
+                    <li>
+                        <label>邮箱</label>
+                        <a href="mailto:3026374567@qq.com" target="_blank">3026374567@qq.com</a>
+                    </li>
+                    <li>
+                        <label>个人主页</label>
+                        <a href="https://gitee.com/doki346091" target="_blank">gitee.com/</a>
+                    </li>
+                    <li>
+                        <label>Github</label>
+                        <a href="https://github.com/Doki346091/dokidoki" target="_blank">github.com/Doki346091/</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 技能点 -->
+            <section class="skill info-unit">
+                <h2>
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i>技能点</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>HTML</label>
+                        <progress value="20" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>CSS</label>
+                        <progress value="10" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>JavaScript</label>
+                        <progress value="0" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>React</label>
+                        <progress value="20" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>设计海报</label>
+                        <progress value="20" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>排版技术</label>
+                        <progress value="20" max="100"></progress>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="qrcode info-unit">
+                <h2><i class="fa fa-reply-all" aria-hidden="true"></i>二维码</h2>
+                <hr/>
+                <img src="assets/images/code.jpg" style="width: 50%;" alt="微信二维码">
+            </section>
+
+            <!-- 技术栈 -->
+            <!-- <div class="stack info-unit">
+                    <h2><i class="fa fa-code" aria-hidden="true"></i>其他</h2>
+                    <hr/>
+                    <ul>
+                        <li>
+                            <label>前端</label>
+                            <span>React、jQuery、微信小程序、Bootstrap、SASS、LESS</span>
+                        </li>
+                        <li>
+                            <label>后端</label>
+                            <span>Node.js、MySQL、MongoDB、WordPress、ThinkPHP</span>
+                        </li>
+                        <li>
+                            <label>其他</label>
+                            <span>Git、SVN、Markdown</span>
+                        </li>
+                    </ul>
+                </div> -->
+        </section>
+
+        <section class="main">
+   <main class="edu info-unit">
+            <!-- 教育经历 -->
+            <section class="edu info-unit">
+                <h2>
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>教育经历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>广东省佛山市高明一中附属初中 - 学生</span>
+                            <time>2016.9-2019.7</time>
+                        </h3>
+                        <p>专业排名
+                            <mark>暂无</mark>暂无</p>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>广东省佛山市高明一中 - 学生</span>
+                            <time>2019.9-2022.7</time>
+                        </h3>
+                        <p>专业排名
+                            <mark>暂无</mark>暂无</p>
+                    </li>
+                	<li>
+                	    <h3>
+                	        <span><marquee direction="right">广东省广州市从化区广州南方学院 - 学生</marquee></span>
+                	        <time>2022.9- 至今</time>
+                	     </h3>
+                	     <p>专业排名
+                	        <mark>暂无，但肯定会有滴</mark>暂无</p>
+                	</li>
+                	    
+                </ul>
+				</main>
+            </section>
+			</section>
+			
+<section class="main">
+	<main class="work info-unit">
+            <!-- 工作经历 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>工作经历</h2>
+                <hr/>
+          <ul>
+                              <li>
+                                  <h3>
+                                      <span>[经历1]在校经历</span>
+                                      <time>2022.9 至今</time>
+                                  </h3>
+                                  <ul class="info-content">
+                                      <li><i class="fa fa-address-card-o " aria-hidden="true"></i>
+          							    参加广州南方学院军歌合唱团
+                                        <mark>文学与传媒学院</mark>
+                                          <mark>参与<em>《我的中国心》</em>合唱</mark>
+                                        </li>
+                                      <li><i class="fa fa-hand-peace-o" aria-hidden="true"></i>
+          							    参加社团面试并进入<em>红十字会外联部</em>
+                                          <mark>参与拉取赞助的工作</mark>。
+          								</li>
+                                      <li><i class="fa fa-thumbs-up" aria-hidden="true"></i>
+          							      参与海报制作
+                                          <mark>完成数字媒体作品创作三张海报的制作</mark>。
+          								</li>
+                                  </ul>
+          						<ul class="info-content">
+          						    <li><i class="fa fa-file-archive-o  " aria-hidden="true"></i>
+          							     参加全校心理绘画比赛
+          						        <mark>文学与传媒学院</mark>
+          						        <mark>作画<em>《明面与暗面》</em>一幅，获得全校二等奖</mark>。
+          								</li>
+          						    <li><i class="fa fa-gavel" aria-hidden="true"></i>
+          							     参与校园最佳ppt制作
+          						        <mark></mark>。
+          								</li>
+          						    <li><i class="fa fa-fighter-jet " aria-hidden="true"></i>
+          							     参与海报制作
+          						        <mark>完成数字媒体作品创作三张海报的制作</mark>。
+          								</li>
+          						    <li><i class="fa fa-hand-lizard-o " aria-hidden="true"></i>
+          							    熟悉desktop的运用
+          							    <mark>文学与传媒学院</mark>
+          								<mark>在许智超老师的课上学习运用了<em>gitee和github</em></mark>
+          								</li>
+          						</ul>
+          						</ul>
+                              </li>
+                              
+                          </ul>
+						  </main>
+            </section>
+</section>
+ <section class="main">
+	 <main class="project indo-unit">
+            <!-- 项目经验 -->
+            <section class="project info-unit">
+                <h2>
+                    <i class="fa fa-magic" aria-hidden="true"></i>个人项目</h2>
+                <hr/>
+               <ul>
+                   <li>
+                       <h3>
+                           <span>设计网页</span>
+                           <span class="link">
+                               <a href="#" target="_blank">Demo</a>
+                           </span>
+                           <time>2022.9-至今</time>
+                       </h3>
+                       <ul class="info-content">
+                           <li>"悦动嘉年华"挑战杯</li>
+                           <li>
+                               <i class="fa fa-shopping-basket " aria-hidden="true"></i>
+                               [目标]制作<em>"悦动嘉年华的"海报设计</em>
+                               <br/>
+                               <i class="fa fa-calendar-check-o " aria-hidden="true"></i>
+                               [团队]同 2 位同专业同学一起
+                               <br/>
+                               <i class="fa fa-university" aria-hidden="true"></i>
+                               [贡献]完成从
+                               <mark>“调研-设计”</mark>等工作，主要负责海报素材的选取
+                               <br/>
+                               <i class="fa fa-folder-open-o " aria-hidden="true"></i>
+                               [效果]作品最终取得第三届挑战杯国家级竞赛“三等奖” （2/2000）</li>
+                       </ul>
+					   </main>
+            </section>
+</section>
+<section class="main">
+	<main class="work info-unit">
+            <!-- 自我评价 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>自我评价/期望</h2>
+                <hr/>
+                <p>我是一个既安静又活跃的人，会有自己的想法：<em>喜欢设计，喜欢唱歌，喜欢画画，喜欢剪视频</em>；我喜欢把自己的爱好做到最好，向更多人展示出我的能力。
+				会有自己的空间：喜欢独处，喜欢散步，喜欢安静地听音乐。所以我是一个"矛盾"的人，但我觉得这就是我自己，我很喜欢这样的自己。我认为不在意别人的评价、不害怕被人讨厌、不刻意追求他人的认可，是通向自由和幸福的终极道路。
+				所以我希望我能够记住这一切，有朝一日我也可以成为自己想要的人，看到属于自己的极光。
+                    <span class="mark-txt"><em>“不要温和地走入那个良夜”</em></span>是我给自己总结的“十字箴言”，鞭策自己做人既不能以己度人，也不以人观己，要脚踏实地做事，坚持自己的梦想和本心。</p>
+            </section>
+			</main>
+        </section>
+    </article>
+
+
+    
+    <footer class="footer">
+        <p><b>© 2022 梁思琦.文档最后更新时间为</b>
+            <time><b>11月22日</b></time>.</p>
+			<address>
+				<b>written by <a href="mailto:3026374567@qq.com">diudiu</a></b><br />
+				come and play with me!
+			</address>
+    </footer>
+
+    <!-- 侧栏 -->
+	
+    <aside>
+        <ul>
+            <li>
+                <a href="https://gitee.com/doki346091" target="_blank">源代码</a>
+            </li>
+            <li>
+                <a href="http://if2er.com/" target="_blank">Blog</a>
+            </li>
+        </ul>
+    </aside>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
